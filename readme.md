@@ -1,7 +1,7 @@
 # Lua documentation made by dex
 # What is lua? 
 lua is known for a coding language for roblox, world of warcraft otherwise it is used for networking
-# Alright lets get started with lua, Not for roblox lua yet
+# Alright lets get started with lua
 
 # Lets get started with datatypes.
 Datatypes are group of collections of data values
