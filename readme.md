@@ -384,4 +384,38 @@ repeating
 repeating
 and so on
 ```
+Now were done with loops lets get into function to simplify and beautify ur code!
+Here is how to use "function"
+```lua
+function abcd(arguments) 
+```
+Basically the arguments would just be like a variable but for function example:
+```lua
+function abcd(a, b) 
+print(a,b) 
+end
+abcd("hello","hai")
+```
+# Output:
+```lua
+Hello hai
+```
+
+Lets modify that to calculate!
+```lua
+function abcd(a, operator, b)
+if operator == "+" then
+print(a + b)
+elseif operator == "*" then
+print(a * b)
+ --and so on
+end
+abcd(5, *, 5)
+```
+# Output:
+```
+25
+```
+Basically u can put any code in the function aslong as it doesnt have any errors
+
 
