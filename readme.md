@@ -1,16 +1,16 @@
 # Lua documentation made by dex
 # What is lua? 
 lua is known for a coding language for roblox, world of warcraft otherwise it is used for networking
-# Alright lets get started!
+# Alright lets get started with lua, Not for roblox lua yet
 
 # Lets get started with datatypes.
 Datatypes are group of collections of data values
 These are:
 ```lua
 table: {}
-number or number: <number> or 1 for example
-float: <float> or 0.1 or 1.1
-boolean or bool: true, false
+number: 1, 30, 31, 3.33, etc
+float: 0.1, 1.1, etc
+bool or boolean: true, false
 string or str: "Hello This is a string" 
 nil: nil represents no value so its like 0 but it has nothing in it
 ```
@@ -85,10 +85,10 @@ print(anyname)
 true
 ```
 Now if u ask how to make description in ur code?
-Here is how we could commend it by using #
+Here is how we could commend it by using "--"
 Heres an example:
 ```lua
-print('Helo World') # prints Helo World ths is an example on putting description on ur code!
+print('Helo World') -- prints Helo World ths is an example on putting description on ur code!
 ```
 # Output:
 ```lua
@@ -134,6 +134,7 @@ print(calculate)
 Now u understand math operators lets get into logical and relational operator
 # Logical and relational operator:
 ```lua
+Relational Operators:
 == : Equal to
 ~= : Not equal to
 > : Greater than
@@ -145,5 +146,242 @@ and : Logical AND
 or : Logical OR
 not : Logical NOT
 ```
+We could use them to check if they are equal to what ur gonna equal it to i dont know how to explain but here is the best explanation:
+```lua
+local a = 5
+local b = 5
+local example = a==b
+print(example)
+```
+# Output:
+```lua
+true
+```
+See it output true? it is because a and b are the same value and we equal it to using == operator
+All Relational operators always returns <bool> true or false
+Now lets get to Logical Operators
+First we start with NOT logic
+```lua
+local a = true
+print(not a) 
+```
 
+# Output:
+```
+false
+```
+Notice how it output false instead of true? it is because we put not in it
+not is used to negate a boolean or bool value it returns the opposite value of its operand
+Now lets get to OR logic
+```lua
+local a = true
+local b = false
+print(a or b)
+print(b or a)
+```
+# Output:
+```lua
+true
+true
+```
+Notice how the two outputs true? 
+it is because "or" returns 'true' if one contains atleast true in it or if one of its operand contains atleast true in it
+Now lets get to AND logic
+```lua
+local a = true
+local b = false
+print(a and b)
+print(b and a)
+```
+# Output:
+```lua
+false
+false
+```
+Notice how both outputs are false?
+It is because "AND" logic returns the value if both are true it returns true if both arent true it returns false if one is true and other is false it returns false
+Example again:
+```lua
+local a = true
+local b = true
+print(a and b)
+```
+# Output:
+```
+```lua
+true
+```
+Now we're done with operators lets get to conditional statements:
+
+# Conditional Statements:
+If u scroll back at keywords you will see "if" and "then" and "else" and "elseif"
+They are used for conditional statements we will use that to construct if statement
+We will use logical operator too to construct if statement
+Here is how:
+
+```lua
+local a = true
+local b = true
+if a == b then
+print('The condition passed!')
+end
+```
+# Output:
+```lua
+The condition passed!
+```
+Noticed how it output The condition passed? and there is an end?
+We needed to put an "end" when putting if statement at the end of the condition.
+It is because we used the Equal To operator or "==" both are the same value so it passes the conditional statement
+If ur questioning what if the other one is not the same value? Lets see that..
+
+```lua
+local a = true
+local b = false
+if a == b then
+print('The condition passed!')
+end
+```
+
+# Output
+```
+```
+Noticed how the output is empty? 
+It is because the condition havent passed we need to add else to make that happen 
+Here is how:
+```lua
+local a = true
+local b = false
+if a == b then
+print('The condition passed!')
+else
+print('The condition havent passed!')
+end
+```
+# Output
+```lua
+The condition havent passed!
+```
+Noticed how the output is the opposite?
+It is because it havent passed the equal to and we put an "else" so it detects if it havent passed the condition statement
+Now if ur asking how to make a multiple if statement in one if statement 
+It is made possible using a keyword called "elseif"
+```lua
+local a = true
+local b = false
+if a == b then
+print('the condition passed!')
+elseif a~=b
+print('condition not passed')
+end
+```
+# Output:
+```lua
+condition not passed
+```
+It is not the best to use elseif in that case but it is what it is
+We used ~= aka "not equal to" for elseif
+
+Now were done with conditional statements lets get into loops
+There are 3 types of loop while, for, repeat
+Lets get started with the most simple one "for loop"
+Heres how to use it:
+
+```lua
+for i = 1,50 do
+print(i)
+end
+```
+# Output:
+```lua
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+```
+It loops for 50 times and the i is the variable thats stored in the loop so u can see how many times it had looped
+U need to put an end just like in the condition statement
+Now we're onto while loop how can we use it? 
+Here is how to use it:
+
+```lua
+local a = true
+while a do wait()
+print('Looped')
+end
+```
+# Output:
+```lua
+Looped
+Looped
+Looped
+Looped
+Looped
+And so on
+```
+It will loop until the bool is false eventually so if u set a to false it will not loop
+Now lets get into repeat loop
+```lua
+local hai = false
+repeat wait()
+print('repeating')
+until hai -- this will keep printing repeating until hai is true
+```
+
+# Comment
+```lua
+repeating
+repeating
+repeating
+repeating
+repeating
+repeating
+and so on
+```
 
