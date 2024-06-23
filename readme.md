@@ -365,7 +365,7 @@ Looped
 Looped
 And so on
 ```
-It will loop until the bool is true eventually so if u set hai to true it will not loop
+It will loop until the bool is false eventually so if u set "A" to true it will not loop
 Now lets get into repeat loop
 ```lua
 local hai = false
@@ -384,6 +384,9 @@ repeating
 repeating
 and so on
 ```
+Notice how similar they are?
+It will loop until the bool is true eventually so if u set hai to true it will not 
+
 Now were done with loops lets get into function to simplify and beautify ur code!
 Here is how to use "function"
 ```lua
@@ -419,3 +422,4 @@ abcd(5, *, 5)
 Basically u can put any code in the function aslong as it doesnt have any errors
 
 
+# We'll get into index, newproxy, metatable, etc some advanced stuff soon
