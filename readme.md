@@ -365,7 +365,7 @@ Looped
 Looped
 And so on
 ```
-It will loop until the bool is false eventually so if u set "A" to true it will not loop
+It will loop until the bool is false eventually so if u set "A" to false it will not loop
 Now lets get into repeat loop
 ```lua
 local hai = false
